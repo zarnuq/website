@@ -2,11 +2,6 @@
 description: "Cybersecurity & AI student at Penn State — CTF competitor, cloud/infrastructure builder, Gentoo and Zig tinkerer."
 ---
 
-# Miles Alford
-
-**Cybersecurity & AI student at Penn State** · CTF competitor · Cloud/infrastructure builder ·
-Linux (Gentoo) and Zig tinkerer
-
 Cybersecurity student at Penn State pursuing dual B.S. degrees in Cybersecurity Analytics &
 Operations and AI Methods & Applications (3.81 GPA). Hands-on experience in penetration testing,
 network defense, and cloud infrastructure, with a **1st-place Capture the Flag win** and a

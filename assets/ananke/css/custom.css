@@ -1,0 +1,389 @@
+/* ==========================================================================
+   Custom styles for milesalford.org — layered on top of Ananke/Tachyons.
+   Concatenated last, so these rules win without needing !important.
+   ========================================================================== */
+
+:root {
+  --accent:        #0f7b52;
+  --accent-bright: #2bb37c;
+  --ink:           #17202a;
+  --body:          #3d4852;
+  --muted:         #6b7683;
+  --rule:          #e2e6ea;
+  --rule-soft:     #eef1f3;
+  --bg:            #fbfbfa;
+  --panel:         #ffffff;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* --- Base ---------------------------------------------------------------- */
+
+body {
+  background-color: var(--bg);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lh-copy,
+.nested-copy-line-height {
+  color: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+/* --- Header / hero ------------------------------------------------------- */
+
+header .bg-black {
+  background: linear-gradient(160deg, #10161c 0%, #05080b 100%);
+}
+
+header h1.f2,
+header .f2.f1-l {
+  color: #f6f8f9;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+header h2.fw1 {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Navigation */
+
+nav[role="navigation"] a.f3 {
+  font-family: var(--mono);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+nav[role="navigation"] ul li a {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+nav[role="navigation"] ul li a:hover {
+  border-bottom-color: var(--accent-bright);
+  color: #fff;
+}
+
+/* --- Article ------------------------------------------------------------- */
+
+article header h1.f1 {
+  color: var(--ink);
+  font-weight: 650;
+  font-size: 2.6rem;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.35em;
+  padding-bottom: 0.35em;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+/* Home page h1 comes from markdown, not the template */
+.is-home .lh-copy h1 {
+  color: var(--ink);
+  font-weight: 650;
+  font-size: 2.9rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+}
+
+.lh-copy h2 {
+  color: var(--ink);
+  font-weight: 620;
+  font-size: 1.5rem;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  margin-top: 2.75rem;
+  margin-bottom: 0.9rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.lh-copy h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.lh-copy h3 {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  margin-top: 1.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.lh-copy p {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+}
+
+.lh-copy strong {
+  color: var(--ink);
+  font-weight: 620;
+}
+
+.lh-copy em {
+  color: var(--muted);
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+}
+
+/* --- Links --------------------------------------------------------------- */
+
+.nested-links a,
+.lh-copy a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 123, 82, 0.32);
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.nested-links a:hover,
+.lh-copy a:hover {
+  border-bottom-color: var(--accent);
+  background-color: rgba(43, 179, 124, 0.09);
+}
+
+/* --- Lists --------------------------------------------------------------- */
+
+.lh-copy ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1.3rem;
+}
+
+.lh-copy ul li {
+  position: relative;
+  padding-left: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.lh-copy ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: -0.05em;
+  color: var(--accent-bright);
+  font-size: 0.95em;
+}
+
+.lh-copy ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1.3rem;
+}
+
+.lh-copy ol li {
+  margin-bottom: 0.6rem;
+}
+
+/* --- Tables (Ananke ships none) ------------------------------------------ */
+
+.lh-copy table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  font-size: 0.95rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lh-copy thead th {
+  background: #f4f6f7;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.lh-copy tbody td {
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+
+.lh-copy tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.lh-copy tbody tr:hover {
+  background: #f8fbf9;
+}
+
+/* Competition results read better in mono; other tables hold prose, so this
+   is scoped to the competitions page via Ananke's body class. */
+.page-competitions .lh-copy tbody td:last-child {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.lh-copy tbody td:last-child strong,
+.lh-copy tbody td strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Projects table: first column is a repo link */
+.lh-copy tbody td:first-child {
+  white-space: nowrap;
+}
+
+/* --- Code ---------------------------------------------------------------- */
+
+.lh-copy code {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  background: #eef1f3;
+  color: var(--ink);
+  padding: 0.12em 0.4em;
+  border-radius: 3px;
+}
+
+/* --- Footer -------------------------------------------------------------- */
+
+footer[role="contentinfo"] {
+  background: linear-gradient(160deg, #10161c 0%, #05080b 100%);
+  border-top: 3px solid var(--accent);
+}
+
+footer[role="contentinfo"] a {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+/* --- Responsive ---------------------------------------------------------- */
+
+@media screen and (max-width: 60em) {
+  article header h1.f1 { font-size: 2rem; }
+  .is-home .lh-copy h1 { font-size: 2.1rem; }
+  .lh-copy h2 { font-size: 1.3rem; }
+
+  .lh-copy table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* --- Font overrides ------------------------------------------------------
+   Ananke applies Tachyons `.avenir` on <body>, `.athelas` on page titles and
+   `.serif` on content. Those single-class rules outrank a bare `body` rule,
+   so override them explicitly. --------------------------------------------- */
+
+body.avenir,
+.lh-copy.serif,
+.nested-copy-line-height.serif,
+h1.athelas,
+h2.athelas,
+.f1.athelas {
+  font-family: var(--sans);
+}
+
+/* Page title (layouts/single.html uses h1.f1.athelas) */
+article > header h1.f1 {
+  color: var(--ink);
+  font-weight: 650;
+  font-size: 2.5rem;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+/* Collapse the empty share/aside slots Ananke leaves above the title */
+article > header aside.instapaper_ignoref:empty,
+article > header #sharing:empty {
+  display: none;
+}
+
+article > header #sharing {
+  margin-top: 0;
+}
+
+/* Tighten the tall home hero */
+.is-home header .tc-l {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/* Give body copy a little more room */
+article.flex-l.mw7 {
+  max-width: 52rem;
+}
+
+/* --- Home hero ------------------------------------------------------------
+   Ananke stacks `pv6-l` on the text block and `pb6-l` on its parent, leaving
+   a large dead band under the tagline. Tighten both. -------------------------- */
+
+.is-home header > div.pb6-l,
+.is-home header > div {
+  padding-bottom: 0;
+}
+
+.is-home header .tc-l {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.is-home header h1 {
+  margin-bottom: 0;
+}
+
+.is-home header h2.fw1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* Home body copy: a touch wider than Ananke's measure-wide */
+.is-home article.measure-wide {
+  max-width: 40rem;
+}
+
+/* --- Table refinements ---------------------------------------------------- */
+
+/* Projects table: keep name and language on one line, description as prose */
+.page-projects .lh-copy tbody td:nth-child(2) {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.page-projects .lh-copy tbody td:last-child {
+  font-size: 0.92rem;
+}
+
+/* Breathing room between a page title and the first paragraph */
+article > header {
+  margin-bottom: 0.75rem;
+}
+
+.lh-copy > p:first-child {
+  margin-top: 0.5rem;
+}

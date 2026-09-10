@@ -4,9 +4,10 @@ title = 'Miles Alford'
 theme = 'ananke'
 
 [params]
-  author = 'Miles Alford'
   description = 'Cybersecurity & AI student at Penn State — CTF competitor, cloud/infrastructure builder, Gentoo and Zig tinkerer.'
   background_color_class = 'bg-black'
+  custom_css = ['custom.css']
+  disable_share = true
   mainSections = ['posts']
 
 [params.ananke]
