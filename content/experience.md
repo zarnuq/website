@@ -1,32 +1,33 @@
 ---
 title: "Experience"
-description: "Teaching, cloud systems administration, and operations roles."
+description: "Teaching Assistant at Penn State IST, Cloud Systems Administrator for CCSO, and operations at The UPS Store."
 ---
 
-## Teaching Assistant, CYBER 100
+## Teaching Assistant — CYBER 100 (Computer Systems Literacy)
 
-**Penn State College of IST (Professor Ed Glantz)** — University Park, PA
-*Jan 2026 – Present*
+**Penn State College of Information Sciences and Technology** — University Park, PA
+*Jan 2026 – Present · Supervising professor: Ed Glantz*
 
-- Assisted with hands-on lab exercises on system hardening and vulnerability scanning, enabling students to apply theoretical knowledge to practical scenarios
-- Boosted student performance by providing one-on-one mentorship during office hours with students lagging behind, resolving technical issues and clarifying complex cybersecurity principles
-- Worked with Professor Glantz to provide the best experience and opportunities to students, improving lab exercise clarity and learning outcomes
+- Guides **60 students** through hands-on labs on system hardening and vulnerability scanning
+- Holds one-on-one office hours for struggling students, troubleshooting technical issues and clarifying concepts
+- Collaborates with Professor Glantz to refine lab exercises for clarity and learning outcomes
 
-## Cloud Systems Administrator, CCSO
+## Cloud Systems Administrator
 
-**Penn State Competitive Cyber Security Organization** — University Park, PA
+**Penn State Competitive Cyber Security Organization (CCSO)** — University Park, PA
 *2025 – Present*
 
-- Provisioned and managed virtual machines for club workshops using OpenStack, Ansible, and Kubernetes, enabling hands-on lab environments for members
-- Automated infrastructure deployment workflows using Ansible playbooks and Kubernetes orchestration, reducing setup time for recurring workshop environments
-- Collaborated with club leadership to support technical infrastructure for competitive training sessions and cybersecurity events
+- Builds blue team practice environments: intentionally vulnerable routers, Linux servers, and Windows hosts that members harden
+- Builds lab environments for malware workshops and red team workshops
+- Configures environments with **Ansible** and deploys them on **OpenStack via Heat templates**, backed by **Ceph** storage
+- Provisions and manages virtual machines for club workshops and competitive training sessions
 
 ## Center Associate
 
 **The UPS Store** — State College, PA
 *Oct 2023 – Present*
 
-- Streamlined daily operations by efficiently managing POS transactions, shipping logistics, and inventory systems, contributing to smooth store workflow
-- Maintained 100% compliance rate on international shipments by meticulously verifying export documentation and customs requirements
-- Increased customer satisfaction by proactively resolving complex shipping inquiries and recommending optimal solutions for time-sensitive deliveries
-- Accelerated new hire productivity by training team members on store systems and protocols, reducing time-to-competency
+- Maintains 100% compliance on international shipments by verifying export documentation and customs requirements
+- Resolves complex shipping inquiries and recommends solutions for time-sensitive deliveries
+- Manages POS transactions, shipping logistics, and inventory systems
+- Trains new team members on store systems and protocols, reducing time-to-competency

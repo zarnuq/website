@@ -1,21 +1,22 @@
 ---
-description: "Cybersecurity student at Penn State — penetration testing, network defense, and vulnerability assessment."
-featured_image: ""
+description: "Cybersecurity & AI student at Penn State — CTF competitor, cloud/infrastructure builder, Gentoo and Zig tinkerer."
 ---
 
 # Miles Alford
 
-**Cybersecurity student at Penn State**, pursuing dual B.S. degrees in Cybersecurity
-Analytics & Operations and Artificial Intelligence Methods & Applications, with a 3.81 GPA.
+**Cybersecurity & AI student at Penn State** · CTF competitor · Cloud/infrastructure builder ·
+Linux (Gentoo) and Zig tinkerer
 
-I work in penetration testing, network defense, and vulnerability assessment. I'm a
-Teaching Assistant for CYBER 100, where I've mentored 50+ students through foundational
-cybersecurity coursework and hands-on labs on system hardening and vulnerability scanning.
-I also serve as a Cloud Systems Administrator for Penn State's Competitive Cyber Security
-Organization, provisioning workshop lab environments with OpenStack, Ansible, and Kubernetes.
+Cybersecurity student at Penn State pursuing dual B.S. degrees in Cybersecurity Analytics &
+Operations and AI Methods & Applications (3.81 GPA). Hands-on experience in penetration testing,
+network defense, and cloud infrastructure, with a **1st-place Capture the Flag win** and a
+**4th-place national finish** in the National Cyber League (NCL) Spring 2026. Teaching Assistant
+supporting 60 students in CYBER 100.
 
-I compete. Top 10 out of 390+ teams at Road to Cyberbay 2026, 3rd place in CCSO's internal
-Red vs Blue, and 10+ national CTFs. Before that, 2nd and 3rd place at the Pennsylvania
-state CyberPatriot competition.
+Outside of coursework I build things for the machines I actually use: [reach](/projects/), a tiling
+Wayland window manager written in Zig, and [lazygentoo](/projects/), an Ansible-driven Gentoo
+installer with LUKS full-disk encryption, Secure Boot key enrollment, and TPM2 auto-unlock.
 
-[About](/about/) · [Experience](/experience/) · [Competitions](/competitions/) · [Skills](/skills/)
+[About](/about/) · [Experience](/experience/) · [Competitions](/competitions/) · [Projects](/projects/) · [Education](/education/) · [Skills](/skills/)
+
+**[mta5459@psu.edu](mailto:mta5459@psu.edu)** · **[github.com/zarnuq](https://github.com/zarnuq)**

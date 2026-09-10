@@ -1,33 +1,28 @@
 ---
 title: "About"
-description: "Cybersecurity and AI student at Penn State, focused on offensive security and network defense."
+description: "Cybersecurity and AI student at Penn State, focused on offensive security, network defense, and cloud infrastructure."
 ---
 
-## Summary
-
 Cybersecurity student at Penn State pursuing dual B.S. degrees in Cybersecurity Analytics &
-Operations and AI Methods & Applications (3.81 GPA). Proven expertise in penetration testing,
-network defense, and vulnerability assessment. Selected as a Teaching Assistant to mentor 50+
-students in foundational cybersecurity coursework to facilitate students' understanding of
-operating systems.
+Operations and AI Methods & Applications (3.81 GPA). Hands-on experience in penetration testing,
+network defense, and cloud infrastructure, with a 1st-place Capture the Flag (CTF) win and a
+4th-place national finish in the National Cyber League (NCL) Spring 2026. Teaching Assistant
+supporting 60 students in CYBER 100.
 
-## Education
+## What I work on
 
-### Penn State University — University Park, PA
+**Security.** Penetration testing, vulnerability assessment, log analysis, and system hardening —
+practiced both in coursework and across 20+ competitive events with Penn State's Competitive Cyber
+Security Organization.
 
-**B.S. Cybersecurity Analytics & Operations**
-**B.S. Artificial Intelligence Methods & Applications**
+**Infrastructure.** As Cloud Systems Administrator for CCSO, I build the environments other members
+break and defend: intentionally vulnerable routers, Linux servers, and Windows hosts, configured
+with Ansible and deployed on OpenStack via Heat templates with Ceph storage.
 
-**GPA: 3.81**
-
-Coursework: Data Structures & Algorithms, Database Systems, Network Security, Application
-Development, AI Fundamentals, Security & Risk Analysis.
-
-### State College Area High School — State College, PA
-
-**GPA: 4.68**
-
-AP Computer Science A & Principles, Advanced C++ (2 courses), Advanced Cybersecurity, Advanced SQL.
+**Linux, deeply.** I run Gentoo. That habit turned into [lazygentoo](/projects/), an installer that
+automates LUKS full-disk encryption, custom kernel builds, Secure Boot signing, and TPM2 auto-unlock
+bound to PCR 7 — and into [reach](/projects/), a tiling Wayland window manager I wrote in Zig on top
+of the river compositor.
 
 ## Contact
 

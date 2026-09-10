@@ -5,7 +5,7 @@ theme = 'ananke'
 
 [params]
   author = 'Miles Alford'
-  description = 'Cybersecurity student at Penn State pursuing dual B.S. degrees in Cybersecurity Analytics & Operations and AI Methods & Applications. Penetration testing, network defense, and vulnerability assessment.'
+  description = 'Cybersecurity & AI student at Penn State — CTF competitor, cloud/infrastructure builder, Gentoo and Zig tinkerer.'
   background_color_class = 'bg-black'
   mainSections = ['posts']
 
@@ -25,6 +25,10 @@ theme = 'ananke'
 [params.ananke.social.email]
   profilelink = 'mailto:mta5459@psu.edu'
 
+
+# No blog posts or tags yet — suppress empty taxonomy pages
+[taxonomies]
+
 [[menu.main]]
   name = 'About'
   url = '/about/'
@@ -41,9 +45,16 @@ theme = 'ananke'
   weight = 30
 
 [[menu.main]]
-  name = 'Skills'
-  url = '/skills/'
+  name = 'Projects'
+  url = '/projects/'
   weight = 40
 
-# No blog posts or tags yet — suppress empty taxonomy pages
-[taxonomies]
+[[menu.main]]
+  name = 'Education'
+  url = '/education/'
+  weight = 50
+
+[[menu.main]]
+  name = 'Skills'
+  url = '/skills/'
+  weight = 60
