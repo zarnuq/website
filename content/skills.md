@@ -5,7 +5,7 @@ description: "Languages, operating systems, cloud infrastructure, and security t
 
 ## Languages
 
-Python · C++ · SQL · Java · Zig · Bash/Shell
+Python · Go · C++ · SQL · Java · Zig · Bash/Shell
 
 ## Operating Systems
 
@@ -13,7 +13,7 @@ Linux (CLI) · Gentoo Linux · Kali Linux · Windows · Windows Active Directory
 
 ## Cloud & Infrastructure
 
-OpenStack (incl. Heat orchestration templates) · Kubernetes · Ceph · Ansible · OPNsense · Git
+OpenStack (incl. Heat orchestration templates) · Kubernetes · Ceph · Ansible · OPNsense · Docker · SQLite · Git
 
 ## Security Tools
 

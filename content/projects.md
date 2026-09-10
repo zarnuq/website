@@ -3,7 +3,24 @@ title: "Projects"
 description: "reach — a tiling Wayland window manager in Zig; lazygentoo — an Ansible Gentoo installer with LUKS, Secure Boot and TPM2; and more."
 ---
 
-Everything below is public on [github.com/zarnuq](https://github.com/zarnuq).
+Most of what follows is public on [github.com/zarnuq](https://github.com/zarnuq); private work is marked as such.
+
+## netdash
+
+**Go** · private repository
+
+A self-hosted homepage that doubles as a hand-authored, live network map. One
+[KDL](https://kdl.dev) file describes every host and how they connect; a small Go server probes each
+one and serves two views off the same status feed — a **dashboard** of service tiles with status
+lights and uptime percentages, and a **map**, an auto-laid-out topology graph derived from how hosts
+uplink into each other. Nodes turn red in both views the moment a check fails.
+
+- **Topology is declared, not discovered.** Nesting in the config *is* the uplink, so there is no separate edge list to drift out of sync — declare a host once, reference it by id
+- **Strict-parsed config:** unknown properties are an error and every id must resolve, so typos fail the load loudly rather than silently dropping a node
+- **HTTP and TCP probes only** — deliberately no ICMP, which would need raw-socket privileges that complicate containers; a TCP connect answers "reachable?" without them
+- **SQLite-backed history** with a windowed uptime API
+- **Ships as a single static binary** — frontend embedded with `//go:embed` and a pure-Go SQLite driver, so no cgo, no sidecars, no runtime dependencies
+- Cytoscape.js + dagre for topology layout; deploys into scratch/distroless
 
 ## reach
 

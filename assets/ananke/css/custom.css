@@ -136,11 +136,19 @@ article header h1.f1 {
   font-weight: 620;
 }
 
+/* Emphasis stays emphasis. An earlier version rendered every <em> in
+   monospace to style date lines, which mangled inline emphasis in prose. */
 .lh-copy em {
+  color: inherit;
+  font-style: italic;
+}
+
+/* Trailing metadata on a line (dates, affiliations) reads as muted meta */
+.lh-copy p > em:last-child {
   color: var(--muted);
   font-style: normal;
   font-family: var(--mono);
-  font-size: 0.875rem;
+  font-size: 0.82rem;
   letter-spacing: 0.01em;
 }
 
