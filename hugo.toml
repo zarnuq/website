@@ -2,3 +2,48 @@ baseURL = 'https://milesalford.org/'
 locale = 'en-us'
 title = 'Miles Alford'
 theme = 'ananke'
+
+[params]
+  author = 'Miles Alford'
+  description = 'Cybersecurity student at Penn State pursuing dual B.S. degrees in Cybersecurity Analytics & Operations and AI Methods & Applications. Penetration testing, network defense, and vulnerability assessment.'
+  background_color_class = 'bg-black'
+  mainSections = ['posts']
+
+[params.ananke]
+  show_recent_posts = false
+
+[params.ananke.home]
+  content_alignment = 'left'
+
+[params.ananke.social.follow]
+  new_window_icon = false
+  networks = ['github', 'email']
+
+[params.ananke.social.github]
+  username = 'zarnuq'
+
+[params.ananke.social.email]
+  profilelink = 'mailto:mta5459@psu.edu'
+
+[[menu.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 10
+
+[[menu.main]]
+  name = 'Experience'
+  url = '/experience/'
+  weight = 20
+
+[[menu.main]]
+  name = 'Competitions'
+  url = '/competitions/'
+  weight = 30
+
+[[menu.main]]
+  name = 'Skills'
+  url = '/skills/'
+  weight = 40
+
+# No blog posts or tags yet — suppress empty taxonomy pages
+[taxonomies]
