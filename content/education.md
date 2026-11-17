@@ -1,6 +1,6 @@
 ---
 title: "Education & Honors"
-description: "Dual B.S. in Cybersecurity Analytics & Operations and AI Methods & Applications at Penn State, 3.81 GPA."
+description: "B.S. in Cybersecurity Analytics & Operations at Penn State, 3.81 GPA."
 ---
 
 ## The Pennsylvania State University
@@ -8,12 +8,12 @@ description: "Dual B.S. in Cybersecurity Analytics & Operations and AI Methods &
 **University Park, PA** — College of Information Sciences and Technology (IST)
 
 **B.S. Cybersecurity Analytics & Operations**
-**B.S. Artificial Intelligence Methods & Applications**
 
-Started Fall 2025 · Second-year student · Expected graduation 2029 · **GPA 3.81**
+Started Fall 2025 · Second-year student · Expected graduation May 2028 · **GPA 3.81**
 
 ## Honors & Awards
 
+- **Order of the Sword & Shield** National Honor Society
 - **Robert C. Jubelirer Trustee Scholarship**, College of IST (2026–2027) — competitive, merit-based, endowed by Senator & Judge Robert and Renee Jubelirer
 - **Dean's List** — Fall 2025, Spring 2026
 

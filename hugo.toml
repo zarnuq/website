@@ -4,7 +4,7 @@ title = 'Miles Alford'
 theme = 'ananke'
 
 [params]
-  description = 'Cybersecurity & AI student at Penn State — CTF competitor, cloud/infrastructure builder, Gentoo and Zig tinkerer.'
+  description = 'Cybersecurity student at Penn State — CTF competitor, red teamer, cloud/infrastructure builder, Gentoo and Zig tinkerer.'
   background_color_class = 'bg-black'
   custom_css = ['custom.css']
   disable_share = true
@@ -49,6 +49,11 @@ theme = 'ananke'
   name = 'Projects'
   url = '/projects/'
   weight = 40
+
+[[menu.main]]
+  name = 'Homelab'
+  url = '/homelab/'
+  weight = 45
 
 [[menu.main]]
   name = 'Education'

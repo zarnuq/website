@@ -1,16 +1,20 @@
 ---
 title: "Competitions"
-description: "CTF and cyber defense results — 1st place SillyCTF 2, 4th nationally in NCL Spring 2026, and 20+ events with Penn State CCSO."
+description: "CTF and cyber defense results — 1st place SillyCTF 2, 3rd at CyberSeed, 4th nationally in NCL Spring 2026, and 20+ events with Penn State CCSO."
 ---
 
 Competing with **Penn State CCSO** (Competitive Cyber Security Organization), 2025 – Present.
-20+ events to date.
+20+ events to date. Member of CCSO's Red Team, and a traveling team member for the Department of
+Energy (DOE) CyberForce Competition.
 
 ## Highlights
 
 | Event | Result |
 |---|---|
 | SillyCTF 2 (2026) | **1st Place** |
+| CyberSeed (Fall 2026) | **3rd Place** — won prize money |
+| NCL Fall 2026 | **13th** |
+| DOE CyberForce Competition (Fall 2026) | **45th** |
 | HiveCTF | **2nd** among academic teams, **5th** globally |
 | National Cyber League (NCL) Spring 2026 | **4th nationally** (team) |
 | Road to CyberBay 2026 | **10th of ~400 teams** |
@@ -24,7 +28,7 @@ Red vs. Blue ran both offense and defense.
 
 ## Also competed
 
-eCitadel 2026 · Department of Energy (DOE) CyberFire CTF 2025 · NCL Fall 2025 · BuckeyeCTF 2025 ·
+NCRC (Fall 2026) · eCitadel 2026 · Department of Energy (DOE) CyberFire CTF 2025 · NCL Fall 2025 · BuckeyeCTF 2025 ·
 Securinets CTF 2025 · LACTF · BearcatCTF 2026 · picoCTF 2026 · MetaCTF monthly CTFs
 
 ## CyberPatriot

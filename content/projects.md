@@ -1,9 +1,30 @@
 ---
 title: "Projects"
-description: "reach — a tiling Wayland window manager in Zig; lazygentoo — an Ansible Gentoo installer with LUKS, Secure Boot and TPM2; and more."
+description: "ferrite — an intercepting proxy in Rust; Doc Works — an Obsidian plugin with 1,500+ downloads; reach — a tiling Wayland window manager in Zig; lazygentoo — an Ansible Gentoo installer; and more."
 ---
 
 Most of what follows is public on [github.com/zarnuq](https://github.com/zarnuq); private work is marked as such.
+
+## ferrite
+
+**Rust** · [github.com/zarnuq/ferrite](https://github.com/zarnuq/ferrite) · Oct 2026 – present
+
+A Burp Suite-style intercepting proxy for web application penetration testing, written in Rust with
+an egui interface.
+
+- **Proxy:** HTTP/1.1, HTTP/2 and WebSockets, TLS MITM with a generated CA, intercept, match & replace, scope, upstream HTTP/SOCKS5
+- **Manual tools:** Repeater, WebSocket Repeater, Intruder (all four attack types), Sequencer, Decoder, Comparer
+- **Automated:** passive and active scanner, crawler, content discovery, race-condition tester, authorization comparison across identities, OpenAPI/Postman/GraphQL/WSDL import
+- Python extension SDK, project files, HAR import/export; packaged as a live ebuild in my Gentoo overlay
+
+## Doc Works & HTML Works
+
+**TypeScript** · [Doc Works](https://github.com/zarnuq/DocWorks) · [HTML Works](https://github.com/zarnuq/HTMLWorks) · GPL-3.0 · Oct 2026 – present
+
+A matching pair of plugins, both listed in the official Obsidian community plugin directory.
+**Doc Works** opens and edits Word, PowerPoint and Excel files inside Obsidian and has passed
+**1,500 downloads**. **HTML Works** previews `.html` files and edits their source in Obsidian's own
+editor, with Vim motions and editor extensions.
 
 ## netdash
 
@@ -34,6 +55,15 @@ compositor's window-management protocol — roughly **5,900 lines of Zig**.
 - Live config reload
 - Virtual desktops
 
+## lazi
+
+**Rust** · [github.com/zarnuq/lazi](https://github.com/zarnuq/lazi) · Sep 2026 – present
+
+A terminal workspace whose main tab is a fast three-column file manager in the style of yazi and
+ranger — vim keys, image previews over kitty's graphics protocol — plus a git tab that shows the
+status of every repository under your project folders. Every key, previewer and opener comes from
+config files. Packaged in my Gentoo overlay.
+
 ## lazygentoo
 
 **Ansible / Shell** · [github.com/zarnuq/lazygentoo](https://github.com/zarnuq/lazygentoo) · May – Jul 2026
@@ -54,8 +84,9 @@ Related: [gentoo-overlay](https://github.com/zarnuq/gentoo-overlay), a personal 
 | [zhimmer](https://github.com/zarnuq/zhimmer) | Shell (zsh) | A zsh plugin, ~2,600 lines, with benchmarks in the README. 0BSD |
 | [pweq](https://github.com/zarnuq/pweq) | Python | PipeWire config generator from an EQ file — replaces EasyEffects and lsp-plugins. MIT |
 | [gentoo-overlay](https://github.com/zarnuq/gentoo-overlay) | Shell | Personal Gentoo ebuild repository |
-| [musicmux](https://github.com/zarnuq/musicmux) | Python | ~3,900-line Python application |
+| [gendtree](https://github.com/zarnuq/gendtree) | Rust | Graphical dependency browser for Gentoo Portage — tree and column views, and *why is this installed* back to `@world`. Single binary |
+| [musicmux](https://github.com/zarnuq/musicmux) | Python | Curses TUI that cleans up a music library: dedupes by decoded audio, quarantines broken files, re-tags from MusicBrainz + Deezer. Every change is reviewed and reversible |
+| [canvasDL](https://github.com/zarnuq/canvasDL) | Python | Browse and bulk-download Canvas LMS courses from a TUI or through an MCP server, signing in via Microsoft SSO |
 | [blue-scripts](https://github.com/zarnuq/blue-scripts) | Shell | Personal blue team scripts |
 | [ncae-scripts](https://github.com/zarnuq/ncae-scripts) | Shell | Scripts for NCAE Cyber Games |
-| [gendtree](https://github.com/zarnuq/gendtree) | Python | Small utility |
 | [dotfiles](https://github.com/zarnuq/dotfiles) | — | Linux desktop configuration |

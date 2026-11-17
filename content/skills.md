@@ -13,7 +13,8 @@ Linux (CLI) · Gentoo Linux · Kali Linux · Windows · Windows Active Directory
 
 ## Cloud & Infrastructure
 
-OpenStack (incl. Heat orchestration templates) · Kubernetes · Ceph · Ansible · OPNsense · Docker · SQLite · Git
+OpenStack (incl. Heat orchestration templates) · Oracle Cloud (OCI, OKE) · Kubernetes · Ceph · Ansible ·
+Proxmox VE · OpenTofu · Talos Linux · Cilium · Flux (GitOps) · OPNsense · pfSense · Docker · SQLite · Git
 
 ## Security Tools
 
