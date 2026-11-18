@@ -284,6 +284,42 @@ footer[role="contentinfo"] a {
   letter-spacing: 0.02em;
 }
 
+/* --- Dark mode ----------------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:       #e8ecf0;
+    --body:      #c0c8d0;
+    --muted:     #8a95a0;
+    --rule:      #2a3038;
+    --rule-soft: #232a30;
+    --bg:        #0e1117;
+    --panel:     #161b22;
+  }
+
+  .lh-copy code {
+    background: #1e252e;
+  }
+
+  .lh-copy thead th {
+    background: #1a2028;
+  }
+
+  .lh-copy tbody tr:hover {
+    background: #141a22;
+  }
+
+  .nested-links a,
+  .lh-copy a {
+    border-bottom-color: rgba(43, 179, 124, 0.35);
+  }
+
+  .nested-links a:hover,
+  .lh-copy a:hover {
+    background-color: rgba(43, 179, 124, 0.12);
+  }
+}
+
 /* --- Responsive ---------------------------------------------------------- */
 
 @media screen and (max-width: 60em) {
