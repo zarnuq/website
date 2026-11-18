@@ -3,6 +3,8 @@ title: "Homelab"
 description: "A five-node Proxmox cluster where I build Kubernetes from the VMs up: OpenTofu, Ubuntu, kubeadm and GitOps."
 ---
 
+![The homelab rack: Dell micro servers, a Brocade switch and locked storage in a perforated enclosure](/images/homelab/rack.png)
+
 My homelab is where I learn infrastructure by owning every layer of it: the hypervisors, the
 network, the VMs, and the Kubernetes cluster on top, all built from code.
 
@@ -36,6 +38,7 @@ and running `nixos-rebuild switch`.
 - **Vaultwarden** password manager and **Nextcloud** for files, backed by PostgreSQL and Redis
 - **Jellyfin** media server, reading the library from the NAS over NFS, with **Seerr** for requests
 - **Prometheus**, **node exporter** and **Grafana** for metrics, **Gatus** for uptime checks, and **Homepage** as the dashboard tying it all together
+- **Wazuh** SIEM — indexer (OpenSearch), manager and dashboard — written as its own NixOS module running Podman containers, translated from Kubernetes manifests, behind Authelia and ready to switch on
 - Some apps run as **Podman** containers managed by NixOS, alongside native services
 - **sops-nix** keeps every secret (API tokens, OIDC keys, app credentials) encrypted with age in the config, decrypted only on the host at activation
 
@@ -52,4 +55,4 @@ distribution hide it:
 ## Stack
 
 Proxmox VE · pfSense · WireGuard · NixOS · sops-nix · nginx · Let's Encrypt · Authelia (SSO / OIDC) ·
-Podman · PostgreSQL · Prometheus · Grafana · NFS · OpenTofu · cloud-init · Ubuntu · kubeadm · Kubernetes · GitOps
+Podman · PostgreSQL · Prometheus · Grafana · Wazuh · NFS · OpenTofu · cloud-init · Ubuntu · kubeadm · Kubernetes · GitOps
