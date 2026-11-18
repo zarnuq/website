@@ -295,14 +295,72 @@ footer[role="contentinfo"] a {
     --rule-soft: #232a30;
     --bg:        #0e1117;
     --panel:     #161b22;
+    --accent:        #2bb37c;
+    --accent-bright: #3dd694;
+  }
+
+  body {
+    background-color: var(--bg) !important;
+    color: var(--body);
+  }
+
+  /* Tachyons .bg-near-white / .bg-white on content wrappers */
+  .bg-near-white,
+  .bg-white,
+  main,
+  article {
+    background-color: var(--bg) !important;
+  }
+
+  /* Tachyons text color overrides */
+  .dark-gray,
+  .near-black,
+  .mid-gray {
+    color: var(--body) !important;
+  }
+
+  .lh-copy,
+  .nested-copy-line-height {
+    color: var(--body);
+  }
+
+  .lh-copy strong {
+    color: var(--ink);
+  }
+
+  .lh-copy h1,
+  .lh-copy h2,
+  .lh-copy h3,
+  article > header h1.f1 {
+    color: var(--ink) !important;
+  }
+
+  article > header h1.f1 {
+    border-bottom-color: var(--accent);
+  }
+
+  .lh-copy h2 {
+    border-top-color: var(--rule);
   }
 
   .lh-copy code {
     background: #1e252e;
+    color: var(--ink);
+  }
+
+  .lh-copy table {
+    background: var(--panel);
+    border-color: var(--rule);
   }
 
   .lh-copy thead th {
     background: #1a2028;
+    color: var(--ink);
+    border-bottom-color: var(--rule);
+  }
+
+  .lh-copy tbody td {
+    border-bottom-color: var(--rule-soft);
   }
 
   .lh-copy tbody tr:hover {
@@ -311,12 +369,24 @@ footer[role="contentinfo"] a {
 
   .nested-links a,
   .lh-copy a {
+    color: var(--accent-bright);
     border-bottom-color: rgba(43, 179, 124, 0.35);
   }
 
   .nested-links a:hover,
   .lh-copy a:hover {
     background-color: rgba(43, 179, 124, 0.12);
+  }
+
+  /* Home hero h1 */
+  .is-home .lh-copy h1 {
+    color: var(--ink) !important;
+  }
+
+  /* Images: subtle border so they don't float on dark bg */
+  .lh-copy img {
+    border-radius: 6px;
+    border: 1px solid var(--rule);
   }
 }
 

@@ -4,7 +4,7 @@ title = 'Miles Alford'
 theme = 'ananke'
 
 [params]
-  description = 'Cybersecurity student at Penn State — CTF competitor, red teamer, cloud/infrastructure builder, Gentoo and Zig tinkerer.'
+  description = 'Cybersecurity student at Penn State. Red teamer, CTF competitor, cloud infrastructure.'
   background_color_class = 'bg-black'
   custom_css = ['custom.css']
   disable_share = true
