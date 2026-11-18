@@ -50,9 +50,11 @@ distribution hide it:
 1. **OpenTofu** declares all six VMs in one file through the Proxmox API. Each node is one line in a map (VM ID, host, IP, cores, memory, disk), so adding or removing a node is a one-line change and `tofu apply`
 2. **Ubuntu 24.04** cloud images, with **cloud-init** setting each VM's static IP and SSH key on first boot
 3. **kubeadm** bootstraps Kubernetes on those VMs: three control-plane nodes for a highly available control plane, three workers for workloads
-4. **GitOps** for everything after that: every workload and cluster service is a plain **Kubernetes manifest** in Git, and the cluster is reconciled from the repository, so Git is the single source of truth for what runs
+4. **Rancher** manages the cluster, and **Fleet** handles GitOps: every workload and cluster service is a plain **Kubernetes manifest** in Git, reconciled automatically so Git is the single source of truth
+
+![Rancher cluster dashboard: 6 nodes, Kubernetes v1.36.6, 447 resources, 22 pods, 15 deployments, all components healthy](/images/homelab/rancher-dashboard.png)
 
 ## Stack
 
 Proxmox VE · pfSense · WireGuard · NixOS · sops-nix · nginx · Let's Encrypt · Authelia (SSO / OIDC) ·
-Podman · PostgreSQL · Prometheus · Grafana · Wazuh · NFS · OpenTofu · cloud-init · Ubuntu · kubeadm · Kubernetes · GitOps
+Podman · PostgreSQL · Prometheus · Grafana · Wazuh · NFS · OpenTofu · cloud-init · Ubuntu · kubeadm · Kubernetes · Rancher · Fleet
